@@ -46,20 +46,26 @@
       <input type="search" placeholder="Pesquisar tarefa..." class="w-full border rounded-lg px-3 py-3">
 
       <!-- ADICIONA: flex gap-2 overflow-x-auto (no celular a barra de filtros rola de lado sem quebrar a página) -->
-      <div class="flex gap-2 overflow-x-auto lg:flex-wrap sticky top-6   self-start">
+      <div class="flex gap-2 overflow-x-auto place-items-center lg:flex-wrap lg:sticky lg:top-6 lg:self-start">
         <!-- ADICIONA nos 3 filtros: px-4 py-3 rounded-full whitespace-nowrap. Ativo (Todas): bg-indigo-600 text-white. Demais: bg-slate-200 -->
-        <button class="px-4 py-3 rounded-full bg-pink-600 text-white whitespace-nowrap sm:flex-none">Todas</button>
-        <button class="px-4 py-3 rounded-full bg-slate-200 whitespace-nowrap sm:flex-none">Pendentes</button>
+        <button class="px-3 py-2 rounded-full bg-pink-600 text-white whitespace-nowrap sm:flex-none">Todas</button>
+        <button class="px-3 py-2 rounded-full bg-slate-200 whitespace-nowrap sm:flex-none">Pendentes</button>
         <button class="px-4 py-3 rounded-full bg-slate-200 whitespace-nowrap sm:flex-none">Concluídas</button>
       </div>
     </section>
 
+
+
+
+
+
     <!-- Coluna 2: lista de tarefas -->
-    <section class="col-span-2">
+    <section class="col-span-1">
       <!-- ADICIONA: space-y-3 (espaço entre as tarefas) -->
-      <ul class="space-y-3">
+      <ul class="space-y-3 sm:">
+
         <!-- ADICIONA nos 3 <li> (repita nos 3): bg-white rounded-xl shadow p-4 flex flex-col gap-3 -->
-        <li class="bg-white rounded-xl shadow p-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <li class="bg-white rounded-xl shadow p-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <!-- ADICIONA nos 3 <label>: flex items-start gap-3 -->
           <label class="flex items-start gap-3 sm:flex-1">
             <!-- ADICIONA nos 3 checkboxes: mt-1 w-5 h-5 -->
@@ -73,10 +79,13 @@
           <!-- ADICIONA nas 3 <div> dos botões: flex gap-2 -->
           <div class="flex gap-2">
             <!-- ADICIONA nos 6 botões: flex-1 px-4 py-3 rounded-lg. Editar: bg-amber-100. Excluir: bg-red-100 text-red-700 -->
-            <button class="flex-1 px-4 py-3 rounded-lg bg-amber-100 sm:flex-none">Editar</button>
-            <button class="flex-1 px-4 py-3 rounded-lg bg-red-100 text-red-700 sm:flex-none">Excluir</button>
+            <button class="flex-1 px-3 py-3 rounded-lg bg-amber-100 sm:flex-none">Editar</button>
+            <button class="flex-1 px-3 py-3 rounded-lg bg-red-100 text-red-700 sm:flex-none">Excluir</button>
           </div>
         </li>
+
+
+        
 
         <li class="bg-white rounded-xl shadow p-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <label class="flex items-start gap-3 sm:flex-1">
